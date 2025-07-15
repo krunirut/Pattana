@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา">
+    <meta name="keywords" content="กิจกรรมพัฒนาผู้เรียน, โรงเรียนสกลนครพัฒนศึกษา, การศึกษา, กิจกรรมนักเรียน">
+    <title>ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-prompt bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="/images/school-logo.png" alt="โลโก้โรงเรียนสกลนครพัฒนศึกษา" class="h-14 mr-4">
+                <h1 class="text-xl font-semibold">ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา</h1>
+            </div>
+            <nav aria-label="เมนูนำทางหลัก">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-300" aria-current="page">หน้าแรก</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-300">เกี่ยวกับ</a></li>
+                    <li><a href="activities.html" class="hover:text-yellow-300">ประเภทกิจกรรม</a></li>
+                    <li><a href="search.html" class="hover:text-yellow-300">ค้นหาข้อมูลนักเรียน</a></li>
+                    <li><a href="news.html" class="hover:text-yellow-300">ข่าวสาร/ประกาศ</a></li>
+                    <li><a href="gallery.html" class="hover:text-yellow-300">คลังภาพ/วิดีโอ</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-300">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <a href="search.html" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-500 transition">ค้นหานักเรียน</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="bg-blue-100 p-8 rounded-lg mb-8 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">ยินดีต้อนรับสู่ระบบกิจกรรมพัฒนาผู้เรียน</h2>
+                <p class="text-lg mb-4">โรงเรียนสกลนครพัฒนศึกษามุ่งพัฒนานักเรียนให้มีสมรรถนะและคุณลักษณะอันพึงประสงค์ผ่านกิจกรรมที่หลากหลายตามหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน</p>
+                <a href="about.html" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition">เรียนรู้เพิ่มเติม</a>
+            </div>
+            <img src="/images/activity-hero.jpg" alt="นักเรียนทำกิจกรรมพัฒนาผู้เรียน" class="w-full md:w-1/2 rounded-lg mt-4 md:mt-0 md:ml-4">
+        </section>
+
+        <!-- Announcements -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">ประกาศและกิจกรรมเด่น</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold">ค่ายลูกเสือ 2568</h3>
+                    <p>วันที่ 20-22 ธ.ค. 2568 ณ ค่ายลูกเสือแห่งชาติ</p>
+                    <a href="news.html" class="text-blue-900 hover:underline">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold">สมัครชุมนุมใหม่</h3>
+                    <p>เปิดรับสมัครชุมนุมหมากรุกและศิลปะ ถึง 30 พ.ย. 2568</p>
+                    <a href="news.html" class="text-blue-900 hover:underline">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold">จิตอาสาทำความสะอาดชุมชน</h3>
+                    <p>วันที่ 15 ธ.ค. 2568 ร่วมพัฒนาชุมชนของเรา</p>
+                    <a href="news.html" class="text-blue-900 hover:underline">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">ลิงก์ด่วน</h2>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="search.html" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">ค้นหาข้อมูลนักเรียน</a>
+                <a href="activities.html" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">สมัครเข้าร่วมกิจกรรม</a>
+                <a href="about.html#guidelines" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">ระเบียบการ</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>โรงเรียนสกลนครพัฒนศึกษา 123 ถ.สกลนคร-นครพนม ต.ธาตุเชิงชุม อ.เมือง จ.สกลนคร</p>
+            <p>ติดต่อ: งานกิจกรรมพัฒนาผู้เรียน โทร. 042-123-4567 อีเมล: activities@sakonnakhon.ac.th</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="mt-2">© 2568 โรงเรียนสกลนครพัฒนศึกษา. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+</body>
+</html>
