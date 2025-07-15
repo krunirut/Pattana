@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="คลังภาพและวิดีโอกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา">
-    <meta name="keywords" content="คลังภาพ, วิดีโอ, กิจกรรมพัฒนาผู้เรียน, โรงเรียนสกลนครพัฒนศึกษา, สกลนคร">
+    <meta name="description" content="คลังภาพและวิดีโอกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา จาก Google Photos และ YouTube">
+    <meta name="keywords" content="คลังภาพ, วิดีโอ, กิจกรรมพัฒนาผู้เรียน, โรงเรียนสกลนครพัฒนศึกษา, สกลนคร, Google Photos">
     <title>คลังภาพ/วิดีโอ - ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body class="font-prompt bg-gray-100">
     <!-- Header -->
@@ -37,35 +39,42 @@
     <main class="container mx-auto px-4 py-8">
         <!-- Gallery Section -->
         <section class="bg-blue-100 p-8 rounded-lg mb-8">
-            <h2 class="text-3xl font-bold mb-4">คลังภาพและวิดีโอ</h2>
-            <p class="text-lg mb-4">สำรวจภาพถ่ายและวิดีโอจากกิจกรรมพัฒนาผู้เรียนตามหลักสูตรแกนกลาง</p>
+            <h2 class="text-3xl font-bold mb-4">คลังภาพและวิดีโอกิจกรรมพัฒนาผู้เรียน</h2>
+            <p class="text-lg mb-4">สำรวจภาพถ่ายจาก Google Photos และวิดีโอจาก YouTube ที่บันทึกกิจกรรมพัฒนาผู้เรียนตามหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน</p>
             <div class="mb-4">
                 <label for="category-filter" class="text-lg font-semibold">กรองตามหมวดหมู่:</label>
                 <select id="category-filter" class="p-2 border rounded">
                     <option value="all">ทั้งหมด</option>
-                    <option value="club">ชุมนุม</option>
                     <option value="scout">ลูกเสือ/ยุวกาชาด</option>
+                    <option value="club">ชุมนุม</option>
                     <option value="social">สาธารณประโยชน์</option>
                     <option value="2025">ปี 2568</option>
                     <option value="2024">ปี 2567</option>
                 </select>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img src="/images/scout-camp.jpg" alt="ค่ายลูกเสือแห่งชาติ 2568" class="w-full h-48 object-cover rounded" loading="lazy">
+                <!-- ภาพจาก Google Photos -->
+                <div data-category="scout" class="bg-white p-4 rounded-lg shadow">
+                    <a href="https://lh3.googleusercontent.com/sample-scout-image" data-lightbox="gallery" data-title="ค่ายลูกเสือแห่งชาติ 2568">
+                        <img src="https://lh3.googleusercontent.com/sample-scout-image" alt="ค่ายลูกเสือแห่งชาติ 2568" class="w-full h-48 object-cover rounded" loading="lazy">
+                    </a>
                     <p class="mt-2">ค่ายลูกเสือแห่งชาติ 2568</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <img src="/images/club-art.jpg" alt="ชุมนุมศิลปะ 2567" class="w-full h-48 object-cover rounded" loading="lazy">
+                <div data-category="club" class="bg-white p-4 rounded-lg shadow">
+                    <a href="https://lh3.googleusercontent.com/sample-art-club" data-lightbox="gallery" data-title="ชุมนุมศิลปะ 2567">
+                        <img src="https://lh3.googleusercontent.com/sample-art-club" alt="ชุมนุมศิลปะ 2567" class="w-full h-48 object-cover rounded" loading="lazy">
+                    </a>
                     <p class="mt-2">ชุมนุมศิลปะ 2567</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <video controls class="w-full h-48 rounded" loading="lazy">
-                        <source src="/videos/community-service.mp4" type="video/mp4">
-                        วิดีโอไม่สามารถเล่นได้
-                    </video>
+                <!-- วิดีโอจาก YouTube -->
+                <div data-category="social" class="bg-white p-4 rounded-lg shadow">
+                    <iframe class="w-full h-48 rounded" src="https://www.youtube.com/embed/sample-video-id" title="จิตอาสาทำความสะอาดชุมชน 2568" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                     <p class="mt-2">จิตอาสาทำความสะอาดชุมชน 2568</p>
                 </div>
+            </div>
+            <!-- ลิงก์ไปยังอัลบั้ม Google Photos -->
+            <div class="mt-4 text-center">
+                <a href="https://photos.app.goo.gl/sampleAlbum" target="_blank" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition">ดูอัลบั้มทั้งหมดใน Google Photos</a>
             </div>
         </section>
     </main>
@@ -82,5 +91,20 @@
             <p class="mt-2">© 2568 โรงเรียนสกลนครพัฒนศึกษา. สงวนลิขสิทธิ์.</p>
         </div>
     </footer>
+
+    <!-- Filter Script -->
+    <script>
+        document.getElementById('category-filter').addEventListener('change', function() {
+            const category = this.value;
+            const items = document.querySelectorAll('.grid > div');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
