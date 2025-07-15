@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ประเภทกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา รวมกิจกรรมแนะแนว ชุมนุม ลูกเสือ และสาธารณประโยชน์">
+    <meta name="keywords" content="กิจกรรมพัฒนาผู้เรียน, โรงเรียนสกลนครพัฒนศึกษา, ชุมนุม, ลูกเสือ, สาธารณประโยชน์">
+    <title>ประเภทกิจกรรม - ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-prompt bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="/images/school-logo.png" alt="โลโก้โรงเรียนสกลนครพัฒนศึกษา" class="h-14 mr-4">
+                <h1 class="text-xl font-semibold">ระบบกิจกรรมพัฒนาผู้เรียน โรงเรียนสกลนครพัฒนศึกษา</h1>
+            </div>
+            <nav aria-label="เมนูนำทางหลัก">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-300">หน้าแรก</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-300">เกี่ยวกับ</a></li>
+                    <li><a href="activities.html" class="hover:text-yellow-300" aria-current="page">ประเภทกิจกรรม</a></li>
+                    <li><a href="search.html" class="hover:text-yellow-300">ค้นหาข้อมูลนักเรียน</a></li>
+                    <li><a href="news.html" class="hover:text-yellow-300">ข่าวสาร/ประก5030">คลังภาพ/วิดีโอ</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-300">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <a href="search.html" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-500 transition">ค้นหานักเรียน</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Tabs -->
+        <section class="bg-blue-100 p-8 rounded-lg mb-8">
+            <h2 class="text-3xl font-bold mb-4">ประเภทกิจกรรมพัฒนาผู้เรียน</h2>
+            <div class="tabs">
+                <div class="flex border-b mb-4">
+                    <button class="tab-button px-4 py-2 text-blue-900 font-semibold border-b-2 border-blue-900" onclick="openTab('guidance')">กิจกรรมแนะแนว</button>
+                    <button class="tab-button px-4 py-2 text-blue-900 font-semibold" onclick="openTab('student')">กิจกรรมนักเรียน</button>
+                    <button class="tab-button px-4 py-2 text-blue-900 font-semibold" onclick="openTab('social')">กิจกรรมเพื่อสังคม</button>
+                </div>
+                <div id="guidance" class="tab-content">
+                    <h3 class="text-2xl font-semibold mb-2">กิจกรรมแนะแนว</h3>
+                    <p class="text-lg mb-4">มุ่งเน้นการพัฒนาความเข้าใจในตนเองและการวางแผนอนาคต ตัวอย่างกิจกรรม:</p>
+                    <ul class="list-disc list-inside">
+                        <li>การอบรมแนะแนวอาชีพ</li>
+                        <li>การให้คำปรึกษาการศึกษาต่อ</li>
+                        <li>กิจกรรมพัฒนาทักษะการตัดสินใจ</li>
+                    </ul>
+                    <p class="mt-2"><strong>ผู้รับผิดชอบ:</strong> นางสาวญานี ประกิ่ง</p>
+                </div>
+                <div id="student" class="tab-content hidden">
+                    <h3 class="text-2xl font-semibold mb-2">กิจกรรมนักเรียน</h3>
+                    <p class="text-lg mb-4">รวมถึงกิจกรรมลูกเสือ เนตรนารี ยุวกาชาด นักศึกษาวิชาทหาร และชุมนุม/ชมรม ตัวอย่าง:</p>
+                    <ul class="list-disc list-inside">
+                        <li>ชุมนุมหมากรุก: พัฒนาทักษะการคิดวิเคราะห์</li>
+                        <li>ชุมนุมศิลปะ: ส่งเสริมความคิดสร้างสรรค์</li>
+                        <li>ลูกเสือ: ฝึกความเป็นผู้นำและการทำงานเป็นทีม</li>
+                    </ul>
+                    <p class="mt-2"><strong>ผู้รับผิดชอบ:</strong> นายนิรุต หารเขมร (ชุมนุม), นายประยุค วรรณทอง (ลูกเสือ), นางสกลรัตน์ นันอุดร (ยุวกาชาด)</p>
+                </div>
+                <div id="social" class="tab-content hidden">
+                    <h3 class="text-2xl font-semibold mb-2">กิจกรรมเพื่อสังคมและสาธารณประโยชน์</h3>
+                    <p class="text-lg mb-4">ส่งเสริมจิตสำนึกสาธารณะและการช่วยเหลือชุมชน ตัวอย่าง:</p>
+                    <ul class="list-disc list-inside">
+                        <li>ทำความสะอาดชุมชน</li>
+                        <li>บริจาคสิ่งของให้ผู้ยากไร้</li>
+                        <li>ปลูกต้นไม้เพื่อสิ่งแวดล้อม</li>
+                    </ul>
+                    <p class="mt-2"><strong>ผู้รับผิดชอบ:</strong> นางวีรญา นามวงค์ชัย</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>โรงเรียนสกลนครพัฒนศึกษา 271 หมู่ 2 ถนนไอทียู ต.ธาตุเชิงชุม อ.เมือง จ.สกลนคร 47000</p>
+            <p>ติดต่อ: งานกิจกรรมพัฒนาผู้เรียน โทร. 042-728195 อีเมล: activities@sakonnakhon.ac.th</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="mt-2">© 2568 โรงเรียนสกลนครพัฒนศึกษา. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Script -->
+    <script>
+        function openTab(tabName) {
+            const tabs = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.add('hidden');
+            }
+            document.getElementById(tabName).classList.remove('hidden');
+            const buttons = document.getElementsByClassName('tab-button');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('border-b-2', 'border-blue-900');
+            }
+            event.currentTarget.classList.add('border-b-2', 'border-blue-900');
+        }
+    </script>
+</body>
+</html>
